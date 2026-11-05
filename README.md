@@ -1,104 +1,109 @@
-# Bibliothèque - C++ POO
+# Bibliotheque — Library Management System
 
-Projet de gestion d'une bibliothèque réalisé en C++.
+A library management system developed in C++ using Object-Oriented Programming (OOP) principles.
 
-Ce projet a été développé pour pratiquer les concepts de la programmation orientée objet (POO).
+## Project Overview
 
-## Objectif
+Bibliotheque is a console-based application designed to manage a library, its books, users, and borrowing operations.
 
-Le programme permet de gérer :
+The project applies object-oriented programming concepts to organize the application into reusable and maintainable classes.
 
-- Les livres
-- Les utilisateurs
-- Les étudiants
-- Les enseignants
-- Les emprunts
-- Les retours
-- La sauvegarde des données
-- Le chargement des données
+## Features
 
-## Fonctionnalités
+- Add, display, search, and manage books.
+- Organize books by category.
+- Manage library users.
+- Support different user types: students and teachers.
+- Manage book borrowing operations.
+- Track borrowed and returned books.
+- Save and load data using text files.
+- Manage library and establishment information.
 
-### Livres
+## Technologies Used
 
-- Ajouter un livre
-- Afficher les livres
-- Rechercher un livre
-- Modifier un livre
-- Supprimer un livre
-- Trier les livres par titre
+| Technology | Purpose |
+|---|---|
+| C++ | Application development |
+| Object-Oriented Programming | Code organization |
+| Classes and Objects | Modeling library entities |
+| Inheritance | Managing different user types |
+| Composition | Organizing relationships between objects |
+| File Handling | Data persistence |
+| VS Code | Development environment |
+| Git & GitHub | Version control |
 
-### Utilisateurs
-
-- Ajouter un étudiant
-- Ajouter un enseignant
-- Afficher les utilisateurs
-- Rechercher un utilisateur
-
-### Emprunts
-
-- Emprunter un livre
-- Retourner un livre
-- Afficher les emprunts
-
-### Fichiers
-
-- Sauvegarder les livres
-- Charger les livres
-- Sauvegarder les utilisateurs
-- Charger les utilisateurs
-- Sauvegarder les emprunts
-- Charger les emprunts
-
-## Concepts POO utilisés
-
-Le projet utilise notamment :
-
-- Classes et objets
-- Encapsulation
-- Constructeurs
-- Destructeurs
-- Héritage
-- Polymorphisme
-- `virtual`
-- `override`
-- `dynamic_cast`
-- Pointeurs
-- Références
-- `const`
-- `vector`
-- STL
-- Gestion dynamique de la mémoire
-- Fichiers
-
-## Structure du projet
+## Project Structure
 
 ```text
 Bibliotheque/
 │
 ├── main.cpp
-│
 ├── Livre.h
 ├── Livre.cpp
-│
 ├── Bibliotheque.h
 ├── Bibliotheque.cpp
-│
 ├── Utilisateur.h
 ├── Utilisateur.cpp
-│
 ├── Etudiant.h
 ├── Etudiant.cpp
-│
 ├── Enseignant.h
 ├── Enseignant.cpp
-│
 ├── Emprunt.h
 ├── Emprunt.cpp
-│
 ├── Fichier.h
 ├── Fichier.cpp
 │
-├── livres.txt
-├── utilisateurs.txt
-└── emprunts.txt
+└── Data Files
+```
+
+## Main OOP Concepts
+
+This project demonstrates:
+
+- **Encapsulation:** Protecting attributes and controlling access through methods.
+- **Inheritance:** Creating specialized classes such as `Etudiant` and `Enseignant` from `Utilisateur`.
+- **Polymorphism:** Supporting different behaviors through shared interfaces.
+- **Composition:** Building complex objects using relationships between classes.
+- **Constructors and Destructors:** Managing object initialization and destruction.
+- **Const Methods:** Protecting objects from unintended modifications.
+
+## How to Run
+
+### Requirements
+
+- C++ compiler (GCC or MinGW)
+- Visual Studio Code (optional)
+
+### Compilation
+
+Compile the project using:
+
+```bash
+g++ main.cpp Livre.cpp Bibliotheque.cpp Utilisateur.cpp Etudiant.cpp Enseignant.cpp Emprunt.cpp Fichier.cpp -o bibliotheque
+```
+
+### Execution
+
+On Windows:
+
+```bash
+bibliotheque.exe
+```
+
+## Learning Objectives
+
+Through this project, I practiced:
+
+- C++ programming.
+- Object-Oriented Programming.
+- Class design and relationships.
+- Inheritance and polymorphism.
+- File handling.
+- Managing a multi-file C++ project.
+- Writing modular and reusable code.
+
+## Author
+
+**GASMI NOURELHOUDA**
+
+Computer Science Student
